@@ -1,4 +1,4 @@
-define(['exports', './number-strategy', './date-strategy', './price-strategy', './text-strategy'], function (exports, _numberStrategy, _dateStrategy, _priceStrategy, _textStrategy) {
+define(['exports', './number-strategy', './price-strategy', './text-strategy'], function (exports, _numberStrategy, _priceStrategy, _textStrategy) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -54,8 +54,7 @@ define(['exports', './number-strategy', './date-strategy', './price-strategy', '
     value: {
       text: _textStrategy.TextStrategy,
       number: _numberStrategy.NumberStrategy,
-      price: _priceStrategy.PriceStrategy,
-      date: _dateStrategy.DateStrategy
+      price: _priceStrategy.PriceStrategy
     }
   });
 });

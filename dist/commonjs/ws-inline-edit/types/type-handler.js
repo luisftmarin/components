@@ -9,8 +9,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _numberStrategy = require('./number-strategy');
 
-var _dateStrategy = require('./date-strategy');
-
 var _priceStrategy = require('./price-strategy');
 
 var _textStrategy = require('./text-strategy');
@@ -41,7 +39,6 @@ Object.defineProperty(TypeHandler, 'TYPES', {
   value: {
     text: _textStrategy.TextStrategy,
     number: _numberStrategy.NumberStrategy,
-    price: _priceStrategy.PriceStrategy,
-    date: _dateStrategy.DateStrategy
+    price: _priceStrategy.PriceStrategy
   }
 });

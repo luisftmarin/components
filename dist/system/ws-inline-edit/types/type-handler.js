@@ -1,7 +1,7 @@
-System.register(['./number-strategy', './date-strategy', './price-strategy', './text-strategy'], function (_export, _context) {
+System.register(['./number-strategy', './price-strategy', './text-strategy'], function (_export, _context) {
   "use strict";
 
-  var NumberStrategy, DateStrategy, PriceStrategy, TextStrategy, _createClass, TypeHandler;
+  var NumberStrategy, PriceStrategy, TextStrategy, _createClass, TypeHandler;
 
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
@@ -12,8 +12,6 @@ System.register(['./number-strategy', './date-strategy', './price-strategy', './
   return {
     setters: [function (_numberStrategy) {
       NumberStrategy = _numberStrategy.NumberStrategy;
-    }, function (_dateStrategy) {
-      DateStrategy = _dateStrategy.DateStrategy;
     }, function (_priceStrategy) {
       PriceStrategy = _priceStrategy.PriceStrategy;
     }, function (_textStrategy) {
@@ -64,8 +62,7 @@ System.register(['./number-strategy', './date-strategy', './price-strategy', './
         value: {
           text: TextStrategy,
           number: NumberStrategy,
-          price: PriceStrategy,
-          date: DateStrategy
+          price: PriceStrategy
         }
       });
     }

@@ -3,7 +3,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 import { NumberStrategy } from './number-strategy';
-import { DateStrategy } from './date-strategy';
+
 import { PriceStrategy } from './price-strategy';
 import { TextStrategy } from './text-strategy';
 
@@ -30,7 +30,6 @@ Object.defineProperty(TypeHandler, 'TYPES', {
   value: {
     text: TextStrategy,
     number: NumberStrategy,
-    price: PriceStrategy,
-    date: DateStrategy
+    price: PriceStrategy
   }
 });
